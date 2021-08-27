@@ -1,0 +1,217 @@
+body {
+  background-color: #a3a3a3;
+  /** body에 배경이미지 적용 */
+  background-image: url("../static/images/pattern.png");
+  /** 고정된 사이즈로 설정 */
+  background-size: 150px;
+
+  /** 기본 body 사이즈를 화면 크기로 고정 */
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bookcover {
+  /** 배경 색깔 지정  */
+  background-color: #ecbdbd;
+  /** 모서리 둥글게 */
+  border-radius: 9px;
+  /** 윤곽선 */
+  border: 1px solid #dbadad;
+
+  /** 기본 너비, 높이 지정 (반응형 X) */
+  width: 960px;
+  height: 660px;
+
+  /** 좌우 마진을 auto(중앙에 배치), 상하 마진을 100px로 지정 */
+  margin: 100px auto;
+
+  /** .bookdot 요소에서 absolute 속성값을 이용하기 위해 position: relative 로 설정 */
+  position: relative;
+}
+
+.bookdot {
+  border: 2px dashed #FFFFFF;
+  border-radius: 9px;
+  /** 상대적인 위치 정하기 */
+  position: absolute;
+  left: 11px;
+  right: 11px;
+  top: 11px;
+  bottom: 11px;
+}
+
+.page{
+  position: absolute;
+  background-color: #cecece;
+  border: 3px solid #dbadad;
+  border-radius: 9px;
+  display: inline-block;
+  padding: 10px; margin: 0 auto;
+  width: 880px;
+  height: 590px;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+
+  display: flex;
+}
+
+.mainbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftbox {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogname{
+  flex: 0.09;
+  border: 1px solid #000000;
+  border-radius: 9px;
+  background-color: rgb(255, 226, 226);
+
+  font-size: 0.85em;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rightbox{
+  flex: 0.2;
+  border-radius: 9px;
+  border: 1px solid #000000;
+  background-color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.profile{
+  border: 1px solid #000000;
+  border-radius: 9px;
+  background-color: white;
+  flex: 1;
+  
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.blogmenu{
+  flex: 0.09;
+  border: 1px solid #000000;
+  border-radius: 9px;
+  background-color: rgb(255, 226, 226);
+  
+  font-size: 0.85em;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main{
+  border: 1px solid #000000;
+  border-radius: 9px;
+  background-color: white;
+  flex: 1;
+
+  font-size: 0.8em;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  overflow: auto;
+}
+
+.redtext{
+    color:red;
+}
+
+.yellowtext{
+  color:rgb(255, 200, 5);
+}
+
+.diary_content{
+  margin-top:5rem;
+  position:absolute;
+  top: 10px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  overflow:auto;
+}
+
+.content_container{
+  padding:20px;
+  margin-bottom:4rem;
+  border:1px solid grey;
+}
+
+.content_title{
+  color:rgb(59, 192, 245);
+  font-size:16px;
+  margin-bottom:30px;
+}
+
+.content_content{
+  text-align:center;
+  font-size:16px;
+}
+
+.secret_container{
+  display:flex;
+  justify-content: center;
+}
+
+.secret{
+  border:solid white;
+  text-align:center;
+  width:180px;
+  height:40px;
+  background-color: white;
+  color:white;
+  text-decoration: none;
+  transition-property:background-color;
+  transition-duration:1.5s;
+}
+
+.secret:hover{
+  text-decoration: none;
+  background-color: rgb(11, 189, 100);
+}
+
+#secret-diary {
+	padding: 10px 20px;
+	font-size: 15px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	background-color: white;
+	align-items: center;
+}
+
+#secret-diary:hover {
+	cursor: pointer;
+	background-color: #3b87ab;
+	transition: 800ms ease all;
+}
+
+#hidden-content-box {
+	display: none;
+}

@@ -1,0 +1,146 @@
+body {
+    background-color: #a3a3a3;
+    /** body에 배경이미지 적용 */
+    background-image: url("../static/images/pattern.png");
+    /** 고정된 사이즈로 설정 */
+    background-size: 150px;
+  
+    /** 기본 body 사이즈를 화면 크기로 고정 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  } 
+  
+  .page{
+    position: absolute;
+    background-color: #cecece;
+    border: 3px solid #dbadad;
+    border-radius: 9px;
+    display: inline-block;
+    padding: 10px; margin: 0 auto;
+    width: 910px;
+    height: 610px;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+  
+    display: flex;
+  }
+  
+  .mainbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leftbox {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .rightbox{
+    flex: 0.2;
+    border-radius: 9px;
+    background-color: none;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .main{
+    border: 1px solid #000000;
+    border-radius: 9px;
+    background-color: white;
+    flex: 1;
+  
+    font-size: 0.8em;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  
+    overflow: auto;
+  }
+
+  .today{
+    flex: 0.145;
+    border: 1px solid #000000;
+    border-radius: 9px;
+    background-color: rgb(255, 226, 226);
+    
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu{
+    position: absolute;
+    width: 100px;
+    height: 32px;
+    background-color: #add1dc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #98c5d3;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 21px;
+    padding: 6px 0 0 0;
+    margin-top: 20px;
+  }
+  
+  .menu:hover{
+    background-color: #51aad3;
+  }
+
+  
+  .blogname{
+    flex: 0.09;
+    border: 1px solid #000000;
+    border-radius: 9px;
+    background-color: rgb(255, 226, 226);
+  
+    font-size: 0.85em;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  
+  .profile{
+    border: 1px solid #000000;
+    border-radius: 9px;
+    background-color: white;
+    flex: 1;
+    
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .blogmenu{
+    flex: 0.09;
+    border: 1px solid #000000;
+    border-radius: 9px;
+    background-color: rgb(255, 226, 226);
+    
+    font-size: 0.85em;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
